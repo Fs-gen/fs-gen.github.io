@@ -12,7 +12,7 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 </head>
 
-<body>
+<body id="body">
     <!-- loader -->
     <div class="loader">
         <img src="https://i.pinimg.com/originals/a9/02/16/a902167cae8538769ad56ec7514ce73c.gif" alt="Loading..." />
@@ -42,8 +42,8 @@
                 </div>
             </div>
 
-            <div class="">
-                <a href="dark.html" class="btn btn-orange">Light Mode</a>
+            <div class="" id="mode">
+                <a href="#" class="" onclick="dark()"><img src="img/sun.png" width="35" alt="" srcset=""></a>
             </div>
         </div>
     </nav>
@@ -54,7 +54,8 @@
         <!-- GAMBAR DAN PROFILE -->
         <div class="row mt-5">
             <div class="col-12 text-center">
-                <img src="img/avatar.svg" class="avatar" alt="" srcset="">
+                <img src="https://pbs.twimg.com/profile_images/1181227174872809473/IhoHBidc_400x400.jpg"
+                    class="rounded-circle avatar" alt="" srcset="">
                 <p class="nama mt-3">Firdaus Ismail</p>
                 <div class="justify-content-center d-flex">
                     <img src="img/location.png" class="img-location" alt="" srcset="">
@@ -103,10 +104,10 @@
                     <div class="modal-body text-center">
                         <div class="navbar-nav">
                             <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-                            <a class="nav-item nav-link" href="#">Features</a>
-                            <a class="nav-item nav-link" href="#">Pricing</a>
+                            <a class="nav-item nav-link" href="https://covid19.firis.my.id">FoCov-19</a>
+                            <!-- <a class="nav-item nav-link" href="#">Pricing</a>
                             <a class="nav-item nav-link disabled" href="#" tabindex="-1"
-                                aria-disabled="true">Disabled</a>
+                                aria-disabled="true">Disabled</a> -->
                         </div>
                     </div>
                 </div>
@@ -137,6 +138,23 @@
             const loader = document.querySelector(".loader");
             loader.className += " hidden"; // class "loader hidden"
         });
+
+        function dark() {
+            $('#body').addClass('dark');
+            $('#mode').html(
+                '<a href="#" class="" onclick="light()"><img src="img/stars.png" width="33" alt="" srcset=""></a>')
+
+        }
+
+        function light() {
+            $('#body').removeClass('dark');
+            $('#body').css({
+                "transition": "1s"
+            });
+
+            $('#mode').html(
+                '<a href="#" class="" onclick="dark()"><img src="img/sun.png" width="33" alt="" srcset=""></a>')
+        }
     </script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>

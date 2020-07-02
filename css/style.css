@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 .loader {
     position: fixed;
     z-index: 99;
@@ -34,12 +36,29 @@
 }
 
 .navbar-toggler div {
-    background-color: #6F6F6F;
+    background-color: #d4d4d4;
     width: 35px;
     height: 5px;
     border-radius: 5px;
     margin-top: 3px;
 }
+
+.navbar-toggler div:nth-child(2) {
+    background-color: #d4d4d4;
+    width: 25px;
+    height: 5px;
+    border-radius: 5px;
+    margin-top: 3px;
+}
+
+.navbar-toggler div:nth-child(3) {
+    background-color: #d4d4d4;
+    width: 30px;
+    height: 5px;
+    border-radius: 5px;
+    margin-top: 3px;
+}
+
 
 .btn-orange {
     background-color: #FF6347;
@@ -76,16 +95,16 @@
 }
 
 .quote {
-    font-family: 'Open sans';
+    font-family: 'Rubik', sans-serif;
     font-size: 16px;
     font-style: italic;
 }
 
 .quoteby {
-    font-family: 'Open sans';
+    font-family: 'Rubik', sans-serif;
     font-size: 17px;
     font-style: italic;
-    font-weight: bold;
+    font-weight: 500;
 }
 
 .footer {
@@ -143,4 +162,16 @@
         color: #6F6F6F;
         bottom: 0;
     }
+}
+
+.dark {
+    background-color: black;
+    color: white;
+    transition: 1s;
+    ;
+}
+
+#mode {
+    margin-right: 20px;
+    margin-top: 10px;
 }
