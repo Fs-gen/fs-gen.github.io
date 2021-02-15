@@ -142,7 +142,7 @@ margin-bottom: 2px;
 }
 
 .kontak a {
-    display: inline-block;
+    display: block;
     margin-top: 18px;
     text-decoration: none;
     color: black;
@@ -151,4 +151,18 @@ margin-bottom: 2px;
 
 .kontak img {
     margin-right: 15px;
+}
+
+@media only screen and (min-width: 1000px)
+{
+    .btn-nav
+    {
+        display: none;
+    }
+
+    .collapse .navbar-nav, .collapse form
+    {
+        margin-top: 30px !important;
+        margin-bottom: 30px !important;
+    }
 }
