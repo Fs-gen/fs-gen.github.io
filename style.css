@@ -126,10 +126,15 @@ margin-bottom: 2px;
     white-space: nowrap;
 }
 
+.karyaku a {
+    display: inline-block;
+
+}
+
 .karyaku img {
     border-radius: 10px;
     margin-right: 10px;
-    display: inline;
+    /* display: inline; */
 }
 
 .dropdown-menu {
@@ -137,8 +142,8 @@ margin-bottom: 2px;
 }
 
 .kontak a {
+    display: inline-block;
     margin-top: 18px;
-    display: block;
     text-decoration: none;
     color: black;
     font-size: 14px !important;
